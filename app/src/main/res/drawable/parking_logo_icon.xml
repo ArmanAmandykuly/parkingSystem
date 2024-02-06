@@ -1,0 +1,17 @@
+<!-- res/drawable/placeholder_image.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background rectangle -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" /> <!-- Light gray color for the background -->
+            <corners android:radius="8dp" /> <!-- Adjust the radius for rounded corners -->
+        </shape>
+    </item>
+    <!-- Image icon (adjust size and padding as needed) -->
+    <item android:src="@drawable/parking_logo"
+    android:gravity="center"
+    android:left="16dp"
+    android:right="16dp"
+    android:top="16dp"
+    android:bottom="16dp" />
+</layer-list>

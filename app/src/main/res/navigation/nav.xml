@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@+id/authFragment">
+
+    <fragment
+        android:id="@id/authFragment"
+        android:name="com.example.parkingapp.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" >
+        <action
+            android:id="@+id/action_authFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_parkingFragment"
+            app:destination="@id/parkingFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_parkingFragment2"
+            app:destination="@id/parkingFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_registrationFragment2"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_authFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.parkingapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_parkingFragment"
+            app:destination="@id/parkingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_authFragment2"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_parkingFragment2"
+            app:destination="@id/parkingFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_registrationFragment2"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkingFragment"
+        android:name="com.example.parkingapp.ParkingFragment"
+        android:label="ParkingFragment" >
+        <action
+            android:id="@+id/action_parkingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_parkingFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_parkingFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.parkingapp.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_aboutFragment_to_parkingFragment"
+            app:destination="@id/parkingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.parkingapp.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_authFragment2"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_parkingFragment"
+            app:destination="@id/parkingFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_mainFragment3"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.parkingapp.MapsFragment"
+        android:label="MapsFragment" />
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.parkingapp.BookingFragment"
+        android:label="BookingFragment" />
+</navigation>
